@@ -12,7 +12,7 @@ const WithToDo = (WrappedComponent) => {
     return (
       <div>
         <label htmlFor="visible" style={{ color: "white", fontSize: "30px" }}>
-          Show
+          Showtodo
         </label>
         <input
           name="visible"
@@ -23,7 +23,7 @@ const WithToDo = (WrappedComponent) => {
             width: "20px",
             height: "20px",
             marginRight: "5px",
-            marginBottom: "10px"
+            marginBottom: "10px",
           }}
         />
         <br />
@@ -39,7 +39,7 @@ const WithToDo = (WrappedComponent) => {
             display: "inline-block",
             width: "20px",
             height: "20px",
-            margin: "0px 30px 10px 0px"
+            margin: "0px 30px 10px 0px",
           }}
         />
         {visible ? <WrappedComponent {...props} /> : <p>Clock to show!!!</p>}
